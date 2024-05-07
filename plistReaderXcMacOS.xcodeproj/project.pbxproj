@@ -8,23 +8,46 @@
 
 /* Begin PBXBuildFile section */
 		A20B85592BEA62BB002BC2CA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20B85582BEA62BB002BC2CA /* main.swift */; };
+		A20B85612BEA64A0002BC2CA /* collections.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = A20B85602BEA6385002BC2CA /* collections.plist */; };
+		A20B85622BEA64A0002BC2CA /* primitives.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = A20B855F2BEA6385002BC2CA /* primitives.plist */; };
+		A20B85642BEA6503002BC2CA /* collections.plist in Copy Files */ = {isa = PBXBuildFile; fileRef = A20B85602BEA6385002BC2CA /* collections.plist */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		A20B85652BEA6503002BC2CA /* primitives.plist in Copy Files */ = {isa = PBXBuildFile; fileRef = A20B855F2BEA6385002BC2CA /* primitives.plist */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		A20B85662BEA6503002BC2CA /* plistReaderXcMacOS in Copy Files */ = {isa = PBXBuildFile; fileRef = A20B85552BEA62BB002BC2CA /* plistReaderXcMacOS */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		A20B85532BEA62BB002BC2CA /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				A20B85612BEA64A0002BC2CA /* collections.plist in CopyFiles */,
+				A20B85622BEA64A0002BC2CA /* primitives.plist in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A20B85632BEA64C2002BC2CA /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "$(SRCROOT)/Products";
 			dstSubfolderSpec = 0;
 			files = (
+				A20B85642BEA6503002BC2CA /* collections.plist in Copy Files */,
+				A20B85652BEA6503002BC2CA /* primitives.plist in Copy Files */,
+				A20B85662BEA6503002BC2CA /* plistReaderXcMacOS in Copy Files */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A20B85552BEA62BB002BC2CA /* plistReaderXcMacOS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = plistReaderXcMacOS; sourceTree = BUILT_PRODUCTS_DIR; };
 		A20B85582BEA62BB002BC2CA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A20B855F2BEA6385002BC2CA /* primitives.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = primitives.plist; sourceTree = "<group>"; };
+		A20B85602BEA6385002BC2CA /* collections.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = collections.plist; sourceTree = "<group>"; };
+		A2636C962BEA6D8600697924 /* Products */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Products; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				A20B85572BEA62BB002BC2CA /* plistReaderXcMacOS */,
+				A2636C962BEA6D8600697924 /* Products */,
 				A20B85562BEA62BB002BC2CA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				A20B85582BEA62BB002BC2CA /* main.swift */,
+				A20B85602BEA6385002BC2CA /* collections.plist */,
+				A20B855F2BEA6385002BC2CA /* primitives.plist */,
 			);
 			path = plistReaderXcMacOS;
 			sourceTree = "<group>";
@@ -72,6 +98,7 @@
 				A20B85512BEA62BB002BC2CA /* Sources */,
 				A20B85522BEA62BB002BC2CA /* Frameworks */,
 				A20B85532BEA62BB002BC2CA /* CopyFiles */,
+				A20B85632BEA64C2002BC2CA /* Copy Files */,
 			);
 			buildRules = (
 			);
@@ -251,6 +278,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6U5MU37ARC;
 				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ci.plistreaderXcMacOs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -262,6 +290,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6U5MU37ARC;
 				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ci.plistreaderXcMacOs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
