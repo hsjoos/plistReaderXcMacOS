@@ -1,16 +1,16 @@
 # Developing a Property List Analyzer Script in Swift for iOS and macOS with  Xcode
 ![alt text](Images/Title-Image-Xcode.png)
 ## This project demonstrates:
-1. Special handling of `.plist` files for macOS and iOS.
+1. Special handling of macOS and iOS `.plist` files.
 2. An easy-to-use script for the Swift source code interpreter.
-3. Swift programming capabilities in Xcode.
+3. Detailed exploration of the specific features that must be considered when using Swift classes in conjunction with Foundation and Core Foundation objects.
 ## What are property lists (`.plists`) and what are they used for in the Apple eco system ?
 Property list files, commonly used in macOS and iOS applications, are configuration files that store data such as user settings, application configurations, and system information in a key-value structured format. 
 
 `.plist` files can include a variety of data types, including dictionaries, arrays, strings, Boolean values, and numbers, as well as date and data values to encompass nearly all essential data types. Typically, these files are saved in either XML format or as binary files, and they can also encapsulate audio, video, or image files as data types.
 
 Related [DTD link](http://www.apple.com/DTDs/PropertyList-1.0.dtd) to get the complete language definition to Apple´s .pist content format description.
-![alt text](Images/plist-diagram-green.png)
+![alt text](Images/plist-diagram-yellow.png)
 Using `.plist` files in Swift is a common practice for managing configuration data in iOS and macOS applications.
 
 Here's a commonly used approach how to read and parse `.plist` files in Swift on macOS:
